@@ -21,9 +21,9 @@ class Producto extends Model
 	
     }
 
-    public function salida(){
+    public function salidas(){
      
-      return $this->belongsTo('App\DetalleSalida','idproducto');
+      return $this->hasMany('App\DetalleSalida','idproducto','idproducto');
     
       }
 }

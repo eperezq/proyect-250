@@ -43,7 +43,7 @@ $i = 1;
                         @foreach($detallessa as $sali)
                         <td class="text-center">{{$i++}}</td>
                         <td>{{$sali->salida->Area}}</td>
-                        <td>{{$sali->productos->descripcion}}</td>
+                        <td>{{$sali->producto->descripcion}}</td>
                         <td class="text-center">{{$sali->cantidad}}</td>
                         <td class="text-center">{{$sali->fechaSalida}}</td>
                         

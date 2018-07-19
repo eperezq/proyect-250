@@ -15,9 +15,9 @@ class DetalleSalida extends Model
 		return $this->belongsTo('App\Salida','idSalida');
 	
     }
-    public function productos(){
+    public function producto(){
      
-      return $this->hasmany('App\Producto','idProducto','idProducto');
+      return $this->belongsTo('App\Producto','idProducto');
     
     }
  
