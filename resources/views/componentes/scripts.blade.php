@@ -53,6 +53,9 @@
         });
     }); 
 </script>
+
+
+<!--================ animacion de carga de barra  ====================== -->
  <script type="text/javascript" charset="utf-8">
   $(document).ready(function(){
     $(".progress-bar").each(function(){
@@ -64,4 +67,20 @@
       }
     })
   })
+</script>
+<!--================ Alerta nav ====================== -->
+<script>
+  function myFunction() {
+      var hour = document.getElementById("alert-pro").innerHTML; 
+      var greeting;
+      if (hour < 18) {
+          greeting = "<span class='ml-4 badge badge-pill red'>Agotado </span>";
+      } else {
+          greeting = "<span class='ml-4 badge badge-pill green'>1 bueno </span>";
+      }
+      document.getElementById("demo").innerHTML = greeting;
+  }
+  
+  myFunction()
+  
 </script>

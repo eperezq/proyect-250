@@ -46,7 +46,7 @@ class SalidaController extends Controller
         $id->fechaRegistro=$datefin;
         //  return $id;
         $id->save();
-        return redirect()->back()->with('message-update', 'Salida Actualizada Correctamente');
+        return redirect('salida')->with('message-update', 'Salida Actualizada Correctamente');
     }
     public function destroy(Salida $id){
        

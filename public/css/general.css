@@ -90,8 +90,8 @@
 }
 
 #yourElement {
-    -webkit-animation-duration: 7s;
-    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: infinite;
 }
 
@@ -1158,6 +1158,16 @@ h5 {
         -o-background-size: cover;
         background-size: cover;
     }
+    .alerta-d{
+        padding: 20px;
+        right: 0px; 
+        width: 30%;
+        height: auto; 
+        position: absolute; 
+        top: 0px; 
+        z-index: 1200000;
+      }  
+    
     .w-100-p {
         width: 100%;
         height: 100vh!important;
@@ -1281,6 +1291,16 @@ h5 {
 @media (max-width: 768px) {
     .po-ca-01 {}
     .carousel-item {}
+    .alerta-d{
+        padding: 10px;
+        right: 0px; 
+        width: 50%;
+        height: auto; 
+        position: absolute; 
+        top: 0px; 
+        z-index: 120;
+      }  
+    
     .w-100-g {
         width: 100%;
     }
@@ -1320,6 +1340,7 @@ h5 {
     }
     .esp-01 {
         display: none;
+     
     }
     .esp-02 {
         margin-left: 60px;
@@ -1886,18 +1907,13 @@ input[type=date] {
 
 
 .alerta-d{
-    padding: 20px;
-    left: 0px; 
-    width: auto; 
-    position: absolute; 
-    top: 0px; 
-    z-index: 120;
+
   }  
 
   *{ font-family: "Lucida Grande";}
       .progress-bar-holder{
         width: 125px;
-        border: 1px solid #ccc;
+        border: 1px solid rgb(15, 15, 15);
         padding: 0.2em;
         margin: 1em 0.2em;
         -webkit-border-radius: 4px;
@@ -1917,5 +1933,4 @@ input[type=date] {
         border-radius: 4px;
       }
       
-      a{ color: red; }
-      a:hover{ color: green;}
+    

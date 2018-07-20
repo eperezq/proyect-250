@@ -36,7 +36,7 @@ class CategoriaController extends Controller
        
         $id ->update(request()->all());
          
-        return redirect()->back()->with('message-update', 'Categoria actualizada Correctamente');
+        return redirect('categoria')>with('message-update', 'Categoria actualizada Correctamente');
     }
     public function destroy(Categoria $id){
        

@@ -32,7 +32,7 @@ class TipoComprobanteController extends Controller
         
         $id ->update(request()->all());
         // return $id;
-        return redirect()->back()->with('message-update', 'Comprobante Actualizado Correctamente');
+        return redirect('comprobante')->with('message-update', 'Comprobante Actualizado Correctamente');
     }
     public function destroy(TipoComprobante $id){
         // return $id;

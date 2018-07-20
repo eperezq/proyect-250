@@ -230,7 +230,15 @@
                         
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-archway"></i><span class="hide-menu">Almacen </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="{{ url('producto') }}" class="sidebar-link"><i class="fas fa-dolly"></i><span class="hide-menu"> Producto </span></a></li>
+                                <li class="sidebar-item">
+                                    <a href="{{ url('producto') }}" class="sidebar-link">
+                                        <i class="fas fa-dolly"></i>
+                                        <span class="hide-menu">
+                                             Producto 
+                                        </span>
+                                        <span  id="demo"></span>
+                                    </a>
+                                </li>
                                 
                                 <li class="sidebar-item"><a href="{{ url('categoria') }}" class="sidebar-link"><i class="fas fa-box-open"></i><span class="hide-menu"> Categoría </span></a></li>
                                 
@@ -242,7 +250,7 @@
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('comprobante') }}" aria-expanded="false"><i class="fas fa-file-alt"></i><span class="hide-menu">Comprobante</span></a></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('empleado') }}" aria-expanded="false"><i class="mdi mdi-worker"></i><span class="hide-menu">Empleados</span> <span class="ml-4 badge badge-pill red ">1 week </span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('empleado') }}" aria-expanded="false"><i class="mdi mdi-worker"></i><span class="hide-menu">Empleados</span></a></li>
 
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('cliente') }}" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Cliente</span></a></li>
 

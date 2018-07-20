@@ -23,7 +23,7 @@ class ProveedorController extends Controller
         
         $proveedores = Proveedor::create(request()->all());
         // dd($categoria);
-        return redirect()->back()->with('message-create', 'Proveedor Creado Correctamente');
+        return redirect('proveedor')->with('message-create', 'Proveedor Creado Correctamente');
     }
 
     public function edit(Proveedor $id){

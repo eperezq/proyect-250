@@ -37,7 +37,7 @@ class ClienteController extends Controller
        
         $id ->update(request()->all());
          
-        return redirect()->back()->with('message-update', 'Cliente Actualizado Correctamente');
+        return redirect('cliente')->with('message-update', 'Cliente Actualizado Correctamente');
     }
     public function destroy(Cliente $id){
        

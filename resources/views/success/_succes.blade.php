@@ -3,9 +3,9 @@
  @if (session()->has('message-create'))
     <div class="text-center ">
             <div class="alerta-d  content-02 p-2" >
-                <div class="alert green white-text b-01 " role="alert">
+                <div class="alert green white-text b-01 sise-t-25" role="alert">
                         <i class="fas fa-exclamation-triangle mr-2"></i> 
-                                {{ session()->get('message-create') }}  
+                         {{ session()->get('message-create') }}  
 
                 </div>
             </div>

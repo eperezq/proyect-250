@@ -40,7 +40,7 @@ class PlatilloController extends Controller
       
         $id ->update(request()->all());
         
-        return redirect()->back()->with('message-update', 'Platillos Actualizado Correctamente');
+        return redirect('platillo')->with('message-update', 'Platillos Actualizado Correctamente');
         
     }
 

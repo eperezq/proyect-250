@@ -32,7 +32,7 @@ class ProductoController extends Controller
     public function update(Producto $id,ProductoRequest $request){
         // return $id;
         $id ->update(request()->all());
-        return redirect()->back()->with('message-update', 'Producto Actualizado Correctamente');
+        return redirect('producto')->with('message-update', 'Producto Actualizado Correctamente');
     }
     public function destroy(Producto $id){
        

@@ -25,7 +25,7 @@ $i = 1;
                             </button>
                 </div>
             </div>
-        
+
 
         <div class="table-responsive"> 
             <table class="table table-bordered-01" id="table">
@@ -43,7 +43,7 @@ $i = 1;
                         @foreach($detallessa as $sali)
                         <td class="text-center">{{$i++}}</td>
                         <td>{{$sali->salida->Area}}</td>
-                        <td>{{$sali->producto->descripcion}}</td>
+              
                         <td class="text-center">{{$sali->cantidad}}</td>
                         <td class="text-center">{{$sali->fechaSalida}}</td>
                         
@@ -62,35 +62,8 @@ $i = 1;
             </table>
         </div>
     </div>
-    <div class='progress-bar-holder'>
-        <div class='progress-bar'>
-          0%
-        </div>
-      </div>
-  
-      <div class='progress-bar-holder'>
-        <div class='progress-bar'>
-          25%
-        </div>
-      </div>
-      
-      <div class='progress-bar-holder'>
-        <div class='progress-bar'>
-          50%
-        </div>
-      </div>
-      
-      <div class='progress-bar-holder'>
-        <div class='progress-bar'>
-          75%
-        </div>
-      </div>
-      
-      <div class='progress-bar-holder'>
-        <div class='progress-bar'>
-          100%
-        </div>
-      </div>
+
+      @include('detalleSalida.sali-create')
 </div>
 
 

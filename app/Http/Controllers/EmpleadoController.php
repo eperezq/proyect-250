@@ -43,7 +43,7 @@ class EmpleadoController extends Controller
        
         $id ->update(request()->all());
         //  dd($id);
-        return redirect()->back()->with('message-update', 'Empleado Actualizado Correctamente');
+        return redirect('empleado')->with('message-update', 'Empleado Actualizado Correctamente');
     }
     public function destroy(Empleado $id){
        
